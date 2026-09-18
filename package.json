@@ -1,0 +1,14 @@
+{
+  "name": "vortex-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vortex - Full-Stack Freelance & Service Provider Marketplace Platform",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "build:client": "npm run build --prefix client",
+    "start": "node server/server.js"
+  }
+}

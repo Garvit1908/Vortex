@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production build outputs
+dist/
+build/
+*/dist/
+*/build/
+
+# Environment secrets and credentials (NEVER commit these)
+.env
+.env.*
+.env.local
+*/.env
+*/.env.*
+*/.env.local
+!.env.example
+!*/.env.example
+
+# Internal development notes & seeders
+PROGRESS.md
+seed.js
+*/seed.js
+
+# Uploads directory (retain directory with .gitkeep)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Logs and debug output
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System & IDE artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
